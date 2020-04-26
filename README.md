@@ -25,7 +25,7 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 ### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
+
 
 ![Dummy Link](url)
 
@@ -55,8 +55,8 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 ### MVP
 
--_Create a search bar to search for books by title or author_
--_Use a book api to add a library of books_
+-_Create a search bar to search for books by title or author_<br>
+-_Use a book api to add a library of books_<br>
 -_Make a local storage that allows user to store their books on a wish list_
 
 <br>
@@ -86,7 +86,7 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
-| OpenLibraryAPI |           |               |                                         |
+| OpenLibraryAPI |           |    https://openlibrary.org/dev/docs/restful_api           |                                         |
 
 <br>
 
@@ -135,9 +135,9 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Add Contact Form    |    L     |     3 hrs      |     TBD     |    TBD    |
+| Create CRUD Actions |    H     |     3 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     6 hrs      |     TBD     |     TBD     |
 
 <br>
 
