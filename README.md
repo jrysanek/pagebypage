@@ -147,7 +147,8 @@ src
 |            | |
 
 <br>
-### SWOT-Analysis
+
+#### SWOT- Analysis
  
  My plan to overcome my weaknesses and threats are to utilize google,  reach out for aid from my classmates and using the information I have learned about React thus far. I know programming is a lot of trial and error, I plan to try and figure out the issues in a timely manner and if that cannot be done on my own to ask from aid from the listed resources.  
 
