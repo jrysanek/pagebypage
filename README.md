@@ -63,7 +63,7 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |   React Router   |                                            |
-|     Link         |                                            |
+|     Link         |Will be using to link the pages to eachother.             |
 |                  |                                            |
 
 <br>
