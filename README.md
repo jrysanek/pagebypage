@@ -31,7 +31,7 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 - Desktop 
 
-![Tablet](wireframes/Pagenypage_tablet.png)
+![Tablet](wireframes/Pagebypage_tablet.png)
 
 - Tablet 
 
