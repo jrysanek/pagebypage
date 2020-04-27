@@ -22,7 +22,9 @@
 
 ### Overview
 
-_**Page by Page** is your new favorite book app! Search for your favorite author or book and add it to your wish list! ._
+_**Page by Page** is your new favorite book app! Search for your favorite author or book and add it to your wish list!
+
+The app will have search bar that allows you too look up books by author or title. The results will display with the book cover and title, with the book itself being a link to more detailed information. The site will be using local storage to allow the user to store a wishlist of books they are interested in for future reference. _
 
 <br>
 
@@ -54,8 +56,7 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 #### Goals
 
-- _Successfully call and render api data_
-- _Add Css_
+My goals for this project are to successfully call and render the api information and data. To have the user be able to easily interact with the site and its capabilites and be able to build this up as a digital bookshelf with commenting and user/login in the future.
 
 <br>
 
@@ -144,6 +145,12 @@ src
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
 |            | |
+
+<br>
+### SWOT-Analysis
+ 
+ My plan to overcome my weaknesses and threats are to utilize google,  reach out for aid from my classmates and using the information I have learned about React thus far. I know programming is a lot of trial and error, I plan to try and figure out the issues in a timely manner and if that cannot be done on my own to ask from aid from the listed resources.  
+
 
 <br>
 
