@@ -27,15 +27,15 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 
 
-![Dummy Link](url)
+![Desktop](wireframes/pagebypage_desktop.png)
 
 - Desktop 
 
-![Dummy Link](url)
+![Tablet](wireframes/pagenypage_tablet.png)
 
 - Tablet 
 
-![Dummy Link](url)
+![Mobile](wireframes/pagebypage_mobile.png)
 
 - Mobile 
 
