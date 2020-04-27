@@ -29,27 +29,15 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 ![Dummy Link](url)
 
-- Desktop Landing
+- Desktop 
 
 ![Dummy Link](url)
 
-- Desktop Body
+- Tablet 
 
 ![Dummy Link](url)
 
-- Desktop Resource Index
-
-![Dummy Link](url)
-
-- Desktop Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+- Mobile 
 
 <br>
 
@@ -82,7 +70,7 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 #### Data
 
-> Use the Data Section to define the API(s) you will be consuming for your project, inluding sample URL queries.
+
 
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
@@ -92,22 +80,20 @@ _**Page by Page** is your new favorite book app! Search for your favorite author
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app.
 
 ```
 src
 |__ assets/
-      |__ data-tests
+      |__ tests
       |__ fonts
-      |__ graphics
       |__ images
-      |__ mockups
+      |__ wireframes
 |__ components/
       |__ Header.jsx
-      |__ Hero.jsx
-      |__ Ipsum.jsx
-      |__ Lorem.jsx
-      |__ CTA.jsx
+      |__ Nav.jsx
+      |__ Search Bar.jsx
+      |__ Books images/links.jsx
+      |__ page link.jsx
       |__ Footer.jsx
 ```
 
@@ -115,30 +101,37 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
+
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Header    |  |   |     | _Will have page title and nav bar._               |
+|  Navigation  |  |    |   | _Will provide links to separate components/pages_       |
+|   Book Images/links   |      |     |      | _This will be the results provided by the api._      |
+|Page Links  |  |     |     | _Link function for the results when they have multiple pages_                 |
+|    Footer    |  |     |     | _Copyright info._ |
 
 <br>
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above. 
->
-> Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe.
+
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     TBD     |    TBD    |
-| Create CRUD Actions |    H     |     3 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     6 hrs      |     TBD     |     TBD     |
-
+| Pseudo code Home   |    H     |     3 hrs      |     TBD     |    TBD    |
+| Pseudo code book showpage |    H     |     3 hrs      |     TBD     |     TBD     |
+| Base code home              |   H       |     6 hrs      |     TBD     |     TBD     |
+| Base code bookshowpage               |     H     |     6 hrs      |     TBD     |     TBD     |
+| Add header            |       L   |     3 hrs      |     TBD     |     TBD     |
+| Add footer              |      L    |     3 hrs      |     TBD     |     TBD     |
+| Api            |      H    |     6 hrs      |     TBD     |     TBD     |
+| Link Pages              |   H       |     6 hrs      |     TBD     |     TBD     |
+| Base CSS               |     H     |     6 hrs      |     TBD     |     TBD     |
+| Testing              |        H  |     8 hrs      |     TBD     |     TBD     |
+| Finish CSS HOME              |   H       |     8 hrs      |     TBD     |     TBD     |
+| Finish CSS BOOK              |    H      |     8 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |     70 hrs      |     TBD     |     TBD     |
 <br>
 
 #### Helper Functions
