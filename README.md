@@ -148,8 +148,9 @@ src
 
 - _Add user accounts
 - _Add the ability for the user to create their own bookshelves
-- _Add review capabilites
--_Add links to site to purchase books
+- _Add review capabilites <br>
+-_Add links to site to purchase books <br>
+-_ Add a drop down menu for genre choices
 
 <br>
 
