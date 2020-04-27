@@ -1,7 +1,6 @@
 # pagebypage
 
-<iframe src="https://giphy.com/embed/YxdQy6Vxbvb44" width="384" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/space-wow-sky-YxdQy6Vxbvb44">via GIPHY</a></p>
-
+[gif]https://gph.is/1UPlgSa
 
 
   - [Overview](#Overview)
