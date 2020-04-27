@@ -1,8 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  //call api 
+  //render books and title on page, wish list option on page
+  //when user clicks link, opens up more information.
   return (
     <div className="App">
       <header>
@@ -13,9 +15,9 @@ function App() {
       <p>Home</p>
       <input type="text" placeholder=" title or author name"></input>
       <button type="button">Submit</button>
-      <div className="searchresults">
+      <div className="search-results">
         <p className="books">
-          
+
         </p>
       </div>
     </div>
