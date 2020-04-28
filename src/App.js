@@ -62,16 +62,16 @@ function App() {
 
       <div className="search-results">
         <main className="books">
-      
-        <Route path="/">
-          {books && <Redirect to="/results" />}
 
-        </Route>
-        
-        
-        <Route path="/results">
-             <Results books={books} />
-        </Route>
+          <Route path="/">
+            {books.length && <Redirect to="/results" />}
+
+          </Route>
+
+
+          <Route path="/results">
+            <Results books={books} />
+          </Route>
         </main>
       </div>
     </div>
