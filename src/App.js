@@ -66,7 +66,6 @@ function App() {
 
           <Route path="/">
             {books.length && <Redirect to="/results" />}
-
           </Route>
 
 
