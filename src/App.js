@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Redirect, Link } from 'react-router-dom'
 import Results from './Results'
+import Showbook from './Showbook'
 import './App.css';
 import convert from 'xml-js';
 import axios from 'axios';
@@ -71,6 +72,10 @@ function App() {
 
           <Route path="/results">
             <Results books={books} />
+          </Route>
+
+          <Route path="/Showbook/:index">
+            <Showbook books={books} />
           </Route>
         </main>
       </div>
