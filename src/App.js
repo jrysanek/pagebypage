@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Route } from 'react-router-dom'
+import Results from './Results'
 import './App.css';
 import convert from 'xml-js';
 import axios from 'axios';
@@ -24,9 +25,9 @@ function App() {
     const resJSON = convert.xml2json(response.data, { compact: true, spaces: 4 })
     console.log(JSON.parse(resJSON))
     const parseRes = JSON.parse(resJSON)
+    const name = parseRes.GoodreadsResponse.search.results.work[0].best_book.title._text
 
-
-    console.log(parseRes.GoodreadsResponse)
+    console.log(name)
   };
 
 
@@ -60,8 +61,9 @@ function App() {
       </form>
       <div className="search-results">
         <main className="books">
-
-          {/* <Results /> */}
+        <Route path="/Results/">
+             <Results />
+        </Route>
         </main>
       </div>
     </div>
