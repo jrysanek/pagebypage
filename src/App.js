@@ -17,7 +17,7 @@ function App() {
      baseURL: 'http://openlibrary.org/books/OL1M.json',
      method: 'get',
      params: {             
-       author: ''
+       author: 'Anne McCaffrey'
        
      }
     });
