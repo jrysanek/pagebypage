@@ -1,4 +1,4 @@
-import React, { useEffect, UseState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
 
@@ -12,9 +12,9 @@ function App() {
     getBooks()
   }, [])
   const getBooks = async (e) => {
-    e.preventDefault
+    if (e) e.preventDefault();
    const response = await axios({
-     baseUrl: 'http://openlibrary.org/books/OL1M.json',
+     baseURL: 'http://openlibrary.org/books/OL1M.json',
      method: 'get',
      params: {             
        author: ''
@@ -40,8 +40,8 @@ function App() {
       </header>
       <p>Home</p>
       <form onSubmit={getBooks}>
-      <input type="text" placeholder="author name" onChange={e => userAuthor(e.target.value)}></input>
-      <button onClick={() => getBooks()} >Submit</button>
+      <input type="text" placeholder="author name" onChange={(e) => userAuthor(e.target.value)}></input>
+      <button>Submit</button>
       </form>
       <div className="search-results">
         <main className="books">
