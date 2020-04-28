@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route } from 'react-router-dom'
+import { Route, Redirect, Link } from 'react-router-dom'
 import Results from './Results'
 import './App.css';
 import convert from 'xml-js';
@@ -8,7 +8,7 @@ import axios from 'axios';
 function App() {
   // const [title, userTitle] = ('')
   const [input, userInput] = useState([]);
-  const [title, setTitle] = useState([]) 
+  const [books, setBooks] = useState([])
 
 
 
@@ -26,7 +26,7 @@ function App() {
     console.log(JSON.parse(resJSON))
     const parseRes = JSON.parse(resJSON)
     // const name = parseRes.GoodreadsResponse.search.results.work[0].best_book.title._text
-    setTitle(parseRes.GoodreadsResponse.search.results.work[0].best_book.title._text)
+    setBooks(parseRes.GoodreadsResponse.search.results.work)
     console.log(parseRes)
   };
 
@@ -59,10 +59,18 @@ function App() {
 
         <button onClick={getBooks}>Submit</button>
       </form>
+
       <div className="search-results">
         <main className="books">
+      
         <Route path="/">
-             <Results book={title} />
+          {books && <Redirect to="/results" />}
+
+        </Route>
+        
+        
+        <Route path="/results">
+             <Results books={books} />
         </Route>
         </main>
       </div>
