@@ -78,7 +78,7 @@ My goals for this project are to successfully call and render the api informatio
 
 |    API     | Quality Docs? | Website       | Sample Query                            |
 | :--------: | :-----------: | :------------ | :-------------------------------------- |
-| OpenLibraryAPI |           |    https://openlibrary.org/dev/docs/restful_api           |                                         |
+| Goodreads |           |    https://www.goodreads.com/api/index#author.books          |                                         |
 
 <br>
 
@@ -129,7 +129,7 @@ src
 | Base code bookshowpage               |     H     |     6 hrs      |     TBD     |     TBD     |
 | Add header            |       L   |     3 hrs      |     TBD     |     TBD     |
 | Add footer              |      L    |     3 hrs      |     TBD     |     TBD     |
-| Api            |      H    |     6 hrs      |     TBD     |     TBD     |
+| Api            |      H    |     6 hrs      |     8hrs    |     TBD     |
 | Link Pages              |   H       |     6 hrs      |     TBD     |     TBD     |
 | Base CSS               |     H     |     6 hrs      |     TBD     |     TBD     |
 | Testing              |        H  |     8 hrs      |     TBD     |     TBD     |
