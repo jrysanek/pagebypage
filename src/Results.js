@@ -10,7 +10,7 @@ import Showbook from './Showbook'
 
     return (
         <div>
-          <h1>{props.name}</h1>
+          <h1>{props.book}</h1>
         </div>
     )
 }

@@ -8,7 +8,7 @@ import axios from 'axios';
 function App() {
   // const [title, userTitle] = ('')
   const [input, userInput] = useState([]);
-
+  const [title, setTitle] = useState([]) 
 
 
 
@@ -25,9 +25,9 @@ function App() {
     const resJSON = convert.xml2json(response.data, { compact: true, spaces: 4 })
     console.log(JSON.parse(resJSON))
     const parseRes = JSON.parse(resJSON)
-    const name = parseRes.GoodreadsResponse.search.results.work[0].best_book.title._text
-
-    console.log(name)
+    // const name = parseRes.GoodreadsResponse.search.results.work[0].best_book.title._text
+    setTitle(parseRes.GoodreadsResponse.search.results.work[0].best_book.title._text)
+    console.log(parseRes)
   };
 
 
@@ -61,8 +61,8 @@ function App() {
       </form>
       <div className="search-results">
         <main className="books">
-        <Route path="/Results/">
-             <Results />
+        <Route path="/">
+             <Results book={title} />
         </Route>
         </main>
       </div>
