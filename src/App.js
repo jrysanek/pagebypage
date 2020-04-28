@@ -10,22 +10,22 @@ function App() {
 
 
 
-  useEffect(() => {
 
-    getBooks()
-  }, [])
   const getBooks = async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
+    console.log(input)
+
     let apiKey = process.env.REACT_APP_API_KEY
-    let userInput = userInput
+
     //assign a variable for user input here 
-    const response = await axios(`https://corsanywhere.herokuapp.com/https://www.goodreads.com/search/index.xml?key=${apiKey}&q=${userInput}`)
+    const response = await axios(`https://corsanywhere.herokuapp.com/https://www.goodreads.com/search/index.xml?key=${apiKey}&q=${input}`)
 
     const resJSON = convert.xml2json(response.data, { compact: true, spaces: 4 })
     console.log(JSON.parse(resJSON))
+    const parseRes = JSON.parse(resJSON)
 
 
-    console.log(response)
+    console.log(parseRes.GoodreadsResponse)
   };
 
 
@@ -55,7 +55,7 @@ function App() {
           onChange={(e) => userInput(e.target.value)}>
         </input>
 
-        <button onClick={() => getBooks()}>Submit</button>
+        <button onClick={getBooks}>Submit</button>
       </form>
       <div className="search-results">
         <main className="books">
