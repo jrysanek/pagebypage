@@ -16,7 +16,7 @@ function App() {
 
   const getBooks = async (e) => {
     e.preventDefault();
-    console.log(input)
+    // console.log(input)
 
     let apiKey = process.env.REACT_APP_API_KEY
 
@@ -24,11 +24,11 @@ function App() {
     const response = await axios(`https://corsanywhere.herokuapp.com/https://www.goodreads.com/search/index.xml?key=${apiKey}&q=${input}`)
 
     const resJSON = convert.xml2json(response.data, { compact: true, spaces: 4 })
-    console.log(JSON.parse(resJSON))
+    // console.log(JSON.parse(resJSON))
     const parseRes = JSON.parse(resJSON)
     // const name = parseRes.GoodreadsResponse.search.results.work[0].best_book.title._text
     setBooks(parseRes.GoodreadsResponse.search.results.work)
-    console.log(parseRes)
+    // console.log(parseRes)
   };
 
 
