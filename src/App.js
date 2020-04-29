@@ -10,7 +10,7 @@ function App() {
   // const [title, userTitle] = ('')
   const [input, userInput] = useState([]);
   const [books, setBooks] = useState([]);
-  
+  const [wishlist, setWishlist] = ([])
 
 
 
@@ -33,8 +33,17 @@ function App() {
   };
 
   
-  useLocalState = () => {
-    const [wishlist, setWishlist] = useState('');
+   const addToWishlist = (book) => {
+     if (!localStorage.getItem('wishlist')) {
+       localStorage.setItem('wishlist', JSON.stringify([]));
+     }
+     const newWishlist = () => {
+    JSON.parse(localStorage.getItem('wishlist'));
+     newWishlist.push(book);
+     localStorage.setItem('wishlist', JSON.stringify(newWishlist));
+     setWishlist(newWishlist);
+
+   }
   }
 
 
@@ -70,7 +79,7 @@ function App() {
 
 
           <Route path="/results">
-            <Results books={books} />
+            <Results addToWishlist={addToWishlist} books={books} />
           </Route>
 
           <Route path="/Showbook/:index">
