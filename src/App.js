@@ -28,7 +28,7 @@ function App() {
     const parseRes = JSON.parse(resJSON)
     // const name = parseRes.GoodreadsResponse.search.results.work[0].best_book.title._text
     setBooks(parseRes.GoodreadsResponse.search.results.work)
-    // console.log(parseRes)
+    console.log(parseRes)
   };
 
 
@@ -49,7 +49,9 @@ function App() {
       <header>
         Page by Page
       </header>
+      <Link to="/">
       <p>Home</p>
+      </Link>
       <form >
 
         <input type="text"
