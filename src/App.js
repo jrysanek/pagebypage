@@ -9,7 +9,8 @@ import axios from 'axios';
 function App() {
   // const [title, userTitle] = ('')
   const [input, userInput] = useState([]);
-  const [books, setBooks] = useState([])
+  const [books, setBooks] = useState([]);
+  
 
 
 
@@ -31,13 +32,10 @@ function App() {
     console.log(parseRes)
   };
 
-
-
-
-
-
-
-
+  
+  useLocalState = () => {
+    const [wishlist, setWishlist] = useState('');
+  }
 
 
 
@@ -78,6 +76,7 @@ function App() {
           <Route path="/Showbook/:index">
             <Showbook books={books} />
           </Route>
+
         </main>
       </div>
     </div>
