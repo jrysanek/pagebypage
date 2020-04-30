@@ -8,7 +8,7 @@ import axios from 'axios';
 
 function App() {
   // const [title, userTitle] = ('')
-  const [input, userInput] = useState([]);
+  const [input, userInput] = useState("");
   const [books, setBooks] = useState([]);
   const [wishlist, setWishlist] = ([]);
   
@@ -43,9 +43,10 @@ function App() {
 
    }
   }
-   const clearInput = (e) => {
-          
-
+    const clearInput = (e) => {
+      userInput([]);
+    //  setBooks([]);
+        
    }
 
 
@@ -54,13 +55,16 @@ function App() {
   return (
     <div className="App">
       <header>
-        Page by Page
+        <h1>Page by Page</h1>
       </header>
-      <Link to="/">
+
+      <Link exact to="/">
       <p onClick={clearInput}>Home</p>
       </Link>
-      <form >
 
+  
+      <form >
+   
         <input type="text"
           placeholder="author name or title"
           value={input}
@@ -90,6 +94,6 @@ function App() {
       </div>
     </div>
   );
+ 
 }
-
 export default App;
