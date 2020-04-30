@@ -28,3 +28,30 @@ main{
   height: 100vh;
   background-color:rgb(225, 225, 205);
 }
+
+
+
+
+
+
+
+
+footer{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+  background-color: rgb(175, 5, 8);
+  height: 100px;
+  width: 100%vh;
+  padding-top: 1px;
+  margin: 0;
+}
+footer h1{
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+
+}
+footer img{
+  padding: 0 10px;
+}

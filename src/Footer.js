@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer(props) {
     return (
         <div>
-            <footer>
+            <footer style={props.style}>
                 <h4>
                     {props.title}
                     <a href="https://www.goodreads.com" target="_blank">

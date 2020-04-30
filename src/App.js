@@ -6,13 +6,14 @@ import './App.css';
 import convert from 'xml-js';
 import axios from 'axios';
 import Header from './Header';
-import Footer from './Footer'
+import Footer from './Footer';
+import Button from './Button';
 
 function App() {
   const [input, userInput] = useState("");
   const [books, setBooks] = useState([]);
   const [wishlist, setWishlist] = useState([]);
-  
+
 
 
 
@@ -28,75 +29,74 @@ function App() {
     // console.log(JSON.parse(resJSON))
     const parseRes = JSON.parse(resJSON)
     setBooks(parseRes.GoodreadsResponse.search.results.work)
-    console.log(parseRes)
+    // console.log(parseRes)
   };
 
-  //adds book to wishlist
-   const addToWishlist = (book) => {
-     if (!localStorage.getItem('wishlist')) {
-       localStorage.setItem('wishlist', JSON.stringify([]));
-     }
-    //  const newWishlist = () => {
-   const newWishlist = JSON.parse(localStorage.getItem('wishlist'));
-     newWishlist.push(book.best_book.title._text);
-     localStorage.setItem('wishlist', JSON.stringify(newWishlist));
-     setWishlist(newWishlist);
-
-  //  }
+  //making the adds book to wishlist function
+  const addToWishlist = (book) => {
+    if (!localStorage.getItem('wishlist')) {
+      localStorage.setItem('wishlist', JSON.stringify([]));
+    }
+    //new variable to store the book to wishlist
+    const newWishlist = JSON.parse(localStorage.getItem('wishlist'));
+    newWishlist.push(book.best_book.title._text);
+    localStorage.setItem('wishlist', JSON.stringify(newWishlist));
+    setWishlist(newWishlist);
   }
-    const clearInput = (e) => {
-      userInput([]);
-    //  setBooks([]);
-        
-   }
+
+
+  const clearInput = (e) => {
+    userInput([]);
+  }
 
 
 
-  
+
   return (
     <div className="App">
 
-        <Header title="Page by Page" />
+      <Header title="Page by Page" />
 
-<main>
-      <Link exact to="/">
-      <p onClick={clearInput}>Home</p>
-      </Link>
-
-  
-      <form >
-   
-        <input type="text"
-          placeholder="author name or title"
-          value={input}
-          onChange={(e) => userInput(e.target.value)}>
-        </input>
-
-        <button onClick={getBooks}>Submit</button>
-      </form>
-
-      <div className="search-results">
-        <div className="books">
-
-          <Route exact path="/">
-            <Results addToWishlist={addToWishlist} books={books} />
-          </Route>
+      <main>
+        <Link exact to="/">
+          <p onClick={clearInput}>Home</p>
+        </Link>
 
 
-         
+        <form >
 
-          <Route path="/Showbook/:index">
-            <Showbook books={books} />
-          </Route>
+          <input type="text"
+            placeholder="author name or title"
+            value={input}
+            onChange={(e) => userInput(e.target.value)}>
+          </input>
 
+          {/* <button onClick={getBooks}>Submit</button> */}
+          <Button title="Submit" getBooks={getBooks} />
+        </form>
+
+        <div className="search-results">
+          <div className="books">
+
+            <Route exact path="/">
+              <Results addToWishlist={addToWishlist} books={books} />
+            </Route>
+
+
+
+
+            <Route path="/Showbook/:index">
+              <Showbook books={books} />
+            </Route>
+
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
 
-    <Footer  title="&copy;Jenna R"/>
+      <Footer title="&copy;Jenna R" />
     </div>
-    
+
   );
- 
+
 }
 export default App;

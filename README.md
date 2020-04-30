@@ -123,7 +123,7 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Pseudo code Home   |    H     |     3 hrs      |     TBD     |    TBD    |
+| Pseudo code Home   |    H     |     3 hrs      |     2hrs    |    2hrs   |
 | Pseudo code book showpage |    H     |     3 hrs      |     TBD     |     TBD     |
 | Base code home              |   H       |     6 hrs      |     TBD     |     TBD     |
 | Base code bookshowpage               |     H     |     6 hrs      |     TBD     |     TBD     |
