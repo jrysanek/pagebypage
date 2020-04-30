@@ -11,7 +11,7 @@ import Footer from './Footer'
 function App() {
   const [input, userInput] = useState("");
   const [books, setBooks] = useState([]);
-  const [wishlist, setWishlist] = ([]);
+  const [wishlist, setWishlist] = useState([]);
   
 
 
@@ -19,7 +19,7 @@ function App() {
 
   const getBooks = async (e) => {
     e.preventDefault();
-    // console.log(input)
+    console.log(input)
 
     let apiKey = process.env.REACT_APP_API_KEY
     const response = await axios(`https://corsanywhere.herokuapp.com/https://www.goodreads.com/search/index.xml?key=${apiKey}&q=${input}`)
@@ -36,13 +36,13 @@ function App() {
      if (!localStorage.getItem('wishlist')) {
        localStorage.setItem('wishlist', JSON.stringify([]));
      }
-     const newWishlist = () => {
-    JSON.parse(localStorage.getItem('wishlist'));
-     newWishlist.push(book);
+    //  const newWishlist = () => {
+   const newWishlist = JSON.parse(localStorage.getItem('wishlist'));
+     newWishlist.push(book.best_book.title._text);
      localStorage.setItem('wishlist', JSON.stringify(newWishlist));
      setWishlist(newWishlist);
 
-   }
+  //  }
   }
     const clearInput = (e) => {
       userInput([]);
@@ -78,14 +78,12 @@ function App() {
       <div className="search-results">
         <div className="books">
 
-          <Route path="/">
-            {books.length && <Redirect to="/results" />}
-          </Route>
-
-
-          <Route path="/results">
+          <Route exact path="/">
             <Results addToWishlist={addToWishlist} books={books} />
           </Route>
+
+
+         
 
           <Route path="/Showbook/:index">
             <Showbook books={books} />
