@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Route, Redirect, Link } from 'react-router-dom'
 import Results from './Results'
 import Showbook from './Showbook'
 import './App.css';
 import convert from 'xml-js';
 import axios from 'axios';
-import Header from './Header'
+import Header from './Header';
+import Footer from './Footer'
 
 function App() {
-  // const [title, userTitle] = ('')
   const [input, userInput] = useState("");
   const [books, setBooks] = useState([]);
   const [wishlist, setWishlist] = ([]);
@@ -94,6 +94,8 @@ function App() {
         </div>
       </div>
     </main>
+
+    <Footer  title="&copy;Jenna R"/>
     </div>
     
   );
