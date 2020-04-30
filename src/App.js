@@ -59,7 +59,7 @@ function App() {
 
       <main>
         <Link exact to="/">
-          <p onClick={clearInput}>Home</p>
+          <p className="Home" onClick={clearInput}>Home</p>
         </Link>
 
 
