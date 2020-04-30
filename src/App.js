@@ -57,7 +57,7 @@ function App() {
       <header>
         <h1>Page by Page</h1>
       </header>
-
+<main>
       <Link exact to="/">
       <p onClick={clearInput}>Home</p>
       </Link>
@@ -75,7 +75,7 @@ function App() {
       </form>
 
       <div className="search-results">
-        <main className="books">
+        <div className="books">
 
           <Route path="/">
             {books.length && <Redirect to="/results" />}
@@ -90,9 +90,11 @@ function App() {
             <Showbook books={books} />
           </Route>
 
-        </main>
+        </div>
       </div>
+    </main>
     </div>
+    
   );
  
 }
