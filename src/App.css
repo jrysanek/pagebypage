@@ -1,7 +1,7 @@
 a{
   text-align: center;
   text-decoration: none;
-  color: white;
+  color: black;
   font-family: 'Josefin Sans', sans-serif;
 }
 header{
@@ -60,6 +60,7 @@ footer{
   margin: 0;
 }
 footer h1{
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   margin: 0 auto;
   color: black;
