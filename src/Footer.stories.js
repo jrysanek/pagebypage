@@ -4,13 +4,14 @@ import { storiesOf } from '@storybook/react';
 import Footer from './Footer';
 
 const style = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignContent: 'center',
   backgroundColor: 'rgb(175, 5, 8)',
-  color: 'black',
-  borderRadius: '2px',
   height: '100px',
   width: '100%vh',
-  // padding: '15px 25px',
-  border: "none"
+  paddingTop: '1px',
+  margin: "0"
 }
 
 
