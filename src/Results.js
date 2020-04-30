@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Book from './Book'
 import axios from 'axios'
 import Showbook from './Showbook'
 
@@ -13,12 +13,7 @@ function Results(props) {
         <>
 
             {props.books.map((book, index) =>
-                <div>
-                    <img src={book.best_book.image_url._text} />
-                    <button onClick={() => props.addToWishlist(book)}>wishlist</button>
-                    <Link to={`/Showbook/${index}`}><h2>{book.best_book.title._text}</h2></Link>
-
-                </div>
+               <Book book={book} index={index} addToWishlist={props.addToWishlist} />
 
             )}
         </>

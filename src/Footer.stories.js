@@ -9,11 +9,11 @@ const style = {
   alignContent: 'center',
   backgroundColor: 'rgb(175, 5, 8)',
   height: '100px',
-  width: '100%vh',
+  width: '100vh',
   paddingTop: '1px',
   margin: "0"
 }
 
 
 storiesOf('Footer', module)
-  .add('Footer', () => <Footer label="Footer" style={style} />)
+  .add('Footer', () => <Footer title='Footer' style={style} />)

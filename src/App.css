@@ -2,7 +2,18 @@ a{
   text-align: center;
   text-decoration: none;
   color: black;
+  font-size: 20px;
+  font-weight: 700;
   font-family: 'Josefin Sans', sans-serif;
+}
+button{
+  background-color: rgb(247, 169, 113);
+  color:black;
+  font-size: 15px;
+  border-radius: 6px;
+  padding: 5px 5px;
+  border: none;
+  
 }
 header{
   margin: 0;
