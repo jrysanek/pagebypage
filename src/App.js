@@ -5,6 +5,7 @@ import Showbook from './Showbook'
 import './App.css';
 import convert from 'xml-js';
 import axios from 'axios';
+import Header from './Header'
 
 function App() {
   // const [title, userTitle] = ('')
@@ -54,9 +55,9 @@ function App() {
   
   return (
     <div className="App">
-      <header>
-        <h1>Page by Page</h1>
-      </header>
+
+        <Header title="Page by Page" />
+
 <main>
       <Link exact to="/">
       <p onClick={clearInput}>Home</p>
