@@ -64,18 +64,13 @@ function App() {
                 <button className="Home" onClick={clearInput}>Home</button>
             </Link>
 
-            <SearchBar getBooks={getBooks} input={input} userInput={userInput} />
-        {/* <form >
-
-          <input type="text"
-            placeholder="author name or title"
-            value={input}
-            onChange={(e) => userInput(e.target.value)}>
-          </input>
-
+           
+        <form >
+          <SearchBar  input={input} onChange={(e) => userInput(e.target.value)}/>
+        
           
           <Button title="Submit" getBooks={getBooks} />
-        </form> */}
+        </form>
 
         <div className="search-results">
           <div className="books">
