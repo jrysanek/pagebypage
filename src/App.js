@@ -68,7 +68,6 @@ function App() {
         <form >
           <SearchBar  input={input} onChange={(e) => userInput(e.target.value)}/>
         
-          
           <Button title="Submit" getBooks={getBooks} />
         </form>
 

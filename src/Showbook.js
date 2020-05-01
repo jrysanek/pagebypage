@@ -7,7 +7,7 @@ function Showbook(props) {
     const books = props.books;
     const index = parseInt(props.match.params.index)
     console.log(books[index])
-    if (books[index]) { 
+        if (books[index]) { 
     return (
         <div>
            <h2 className="showTitle">{books[index].best_book.title._text}</h2>
