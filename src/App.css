@@ -134,6 +134,7 @@ input{
 
 .showImg{
   height:250px;
+  padding-right: 15px;
 }
 
 footer{
@@ -167,9 +168,9 @@ footer img{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px auto;
+    margin: 9px auto;
     border: 2px solid black;
-    height: 1230px;
+    height: 1229px;
     width: 770px;
     align-content: center;
     background-color: rgb(175, 5, 8);
@@ -178,10 +179,15 @@ footer img{
   footer{
    position: absolute;
     width: 100%;
+   
+
+}
+main{
+  padding: 0;
 }
   .imgRes{
     padding-left: 35px;
-    height: 122px;
+    height: 119px;
   
 }
   input{
@@ -199,8 +205,8 @@ footer img{
   margin-top: 15px;
 }
 .Home{
-  padding: 9px;
-  font-size: 15px;
+  padding: 14px;
+  font-size: 25px;
 }
  
  
@@ -213,14 +219,14 @@ footer img{
 
 .showImg{
   height:550px;
-  margin: 0 35px;
+  margin: 0 55px;
 }
 .showWishlist{
   padding: 15px;
   margin: 10px 85px;
 }
 .showTitle{
-  font-size: 50px;
+  font-size: 45px;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   margin-top: -150px;
