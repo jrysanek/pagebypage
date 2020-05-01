@@ -10,9 +10,9 @@ function Showbook(props) {
     if (books[index]) { 
     return (
         <div>
-           <h2>{books[index].best_book.title._text}</h2>
-           <h3>{books[index].best_book.author.name._text}</h3>
-           <img src={books[index].best_book.image_url._text} />
+           <h2 className="showTitle">{books[index].best_book.title._text}</h2>
+           <h3 className="showAuth">{books[index].best_book.author.name._text}</h3>
+           <img className="showImg" src={books[index].best_book.image_url._text} />
            <button className="wishlist">Wishlist</button>
         </div>
     )} else {

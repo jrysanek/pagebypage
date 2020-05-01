@@ -110,12 +110,25 @@ input{
   font-size: 15px;
   text-align: center;
   margin-bottom: 5px;
+  font-family: 'Josefin Sans', sans-serif;
 
 }
 .imgRes{
   padding-left: 35px;
   height: 135px;
   
+}
+.showTitle{
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+.showAuth{
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.showImg{
+  height:250px;
 }
 
 
