@@ -47,6 +47,7 @@ function App() {
 
   const clearInput = (e) => {
     userInput([]);
+    setBooks([]);
   }
 
 
