@@ -5,7 +5,7 @@ function Button(props) {
 
 return (
 <div>
-    <button style={props.style} onClick={props.getBooks}>{props.title}</button> 
+    <button className="sButton" style={props.style} onClick={props.getBooks}>{props.title}</button> 
 </div>
 )
 }

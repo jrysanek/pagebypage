@@ -13,7 +13,7 @@ button{
   border-radius: 6px;
   padding: 5px 5px;
   border: none;
-  
+  margin-top: 10px;
 }
 .wishlist{
   background-color: rgb(245, 148, 144);
@@ -62,6 +62,16 @@ main{
   color: white;
  
 }
+form{
+  display: flex;
+  justify-content: center;
+}
+input{
+  padding: 5px 5px;
+  margin: 12px 10px;
+  text-align: center;
+}
+
 
 
 
