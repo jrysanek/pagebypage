@@ -8,6 +8,7 @@ import axios from 'axios';
 import Header from './Header';
 import Footer from './Footer';
 import Button from './Button';
+import SearchBar from './SearchBar';
 
 function App() {
   const [input, userInput] = useState("");
@@ -59,12 +60,12 @@ function App() {
       <Header title="Page by Page" />
 
       <main>
-        <Link exact to="/">
-          <button className="Home" onClick={clearInput}>Home</button>
-        </Link>
+            <Link exact to="/">
+                <button className="Home" onClick={clearInput}>Home</button>
+            </Link>
 
-
-        <form >
+            <SearchBar getBooks={getBooks} input={input} userInput={userInput} />
+        {/* <form >
 
           <input type="text"
             placeholder="author name or title"
@@ -74,7 +75,7 @@ function App() {
 
           
           <Button title="Submit" getBooks={getBooks} />
-        </form>
+        </form> */}
 
         <div className="search-results">
           <div className="books">

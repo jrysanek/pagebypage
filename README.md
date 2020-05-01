@@ -66,8 +66,8 @@ My goals for this project are to successfully call and render the api informatio
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|   React Router   |                                            |
-|     Link         |Will be using to link the pages to eachother.             |
+|   React Router   |  Using router to direct to different pages.   |
+|     Link         |Will be using to link the pages to eachother.   |
 |                  |                                            |
 
 <br>
@@ -124,18 +124,18 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Pseudo code Home   |    H     |     3 hrs      |     2hrs    |    2hrs   |
-| Pseudo code book showpage |    H     |     3 hrs      |     TBD     |     TBD     |
-| Base code home              |   H       |     6 hrs      |     TBD     |     TBD     |
-| Base code bookshowpage               |     H     |     6 hrs      |     TBD     |     TBD     |
-| Add header            |       L   |     3 hrs      |     TBD     |     TBD     |
-| Add footer              |      L    |     3 hrs      |     TBD     |     TBD     |
-| Api            |      H    |     6 hrs      |     8hrs    |     TBD     |
-| Link Pages              |   H       |     6 hrs      |     TBD     |     TBD     |
-| Base CSS               |     H     |     6 hrs      |     TBD     |     TBD     |
-| Testing              |        H  |     8 hrs      |     TBD     |     TBD     |
-| Finish CSS HOME              |   H       |     8 hrs      |     TBD     |     TBD     |
-| Finish CSS BOOK              |    H      |     8 hrs      |     TBD     |     TBD     |
-| TOTAL               |          |     70 hrs      |     TBD     |     TBD     |
+| Pseudo code book showpage |    H     |     3 hrs      |     3hrs     |     3hrs     |
+| Base code home              |   H       |     6 hrs      |     7hrs     |     7hrs    |
+| Base code bookshowpage               |     H     |     6 hrs      |     6 hrs      |    6hrs     |
+| Add header            |       L   |     3 hrs      |     3 hrs      |     3 hrs      |
+| Add footer              |      L    |     3 hrs      |     3 hrs       |     3 hrs      |
+| Api            |      H    |     6 hrs      |     8hrs    |     8hrs     |
+| Link Pages              |   H       |     6 hrs      |    7hrs    |     7hrs     |
+| Base CSS               |     H     |    6 hrs      |     8hrs    |     8hrs     |
+| Storybook              |        H  |     8 hrs      |     10hrs    |     10hrs    |
+| Finish CSS HOME              |   H       |     8 hrs      |     6hrs    |     6hrs      |
+| Finish CSS BOOK              |    H      |     8 hrs      |     6hrs      |     6hrs     |
+| TOTAL               |          |     70 hrs      |     69hrs     |     69hrs     |
 <br>
 
 #### Helper Functions
@@ -168,11 +168,12 @@ src
 ***
 
 ## Project Delivery
-
+https://pagebypage.netlify.app
 ### Code Showcase
 
->
 
 ### Code Issues & Resolutions
-
+- Mobile and Tablet views will render sometimes and break others, it seems to be a browser issue.
+-Trying to Link and Route new components was challenging.
+-Trying to get storybook off the ground, ended up reaching for help and using class documentation and videos.
 >
