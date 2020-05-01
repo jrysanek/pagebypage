@@ -60,7 +60,7 @@ function App() {
 
       <main>
         <Link exact to="/">
-          <p className="Home" onClick={clearInput}>Home</p>
+          <button className="Home" onClick={clearInput}>Home</button>
         </Link>
 
 
@@ -80,7 +80,7 @@ function App() {
           <div className="books">
 
             <Route exact path="/">
-              <Results addToWishlist={addToWishlist} books={books} />
+              <Results  addToWishlist={addToWishlist} books={books} />
             </Route>
 
 

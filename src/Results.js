@@ -13,7 +13,7 @@ function Results(props) {
         <>
 
             {props.books.map((book, index) =>
-               <Book  book={book} index={index} addToWishlist={props.addToWishlist} />
+               <Book  book={book} style={props.style} index={index} addToWishlist={props.addToWishlist} />
 
             )}
         </>

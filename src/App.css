@@ -7,6 +7,7 @@ a{
   font-family: 'Josefin Sans', sans-serif;
 }
 
+
 button{
   background-color: rgb(247, 169, 113);
   color:black;
@@ -49,6 +50,7 @@ header{
   background-position: center;
   background-repeat: no-repeat;
   height: 250px;
+  
 }
 
 header h1{
@@ -73,15 +75,19 @@ main{
 }
 
 .Home{
- background-color: rgb(175, 5, 8); 
- margin: 0;
- padding: 5px;
+  display: flex;
+  justify-content: center;
+   align-content: center;
+  background-color: rgb(175, 5, 8); 
+  margin: 0;
+  padding: 5px;
+}
+a .Home{
+  display: flex;
+  margin: 2px auto;
+
 }
 
-.Home p{
-  color: white;
- 
-}
 
 form{
   display: flex;
@@ -183,7 +189,7 @@ footer img{
    margin: 15px 10px;
    text-align: center;
 }
-button{
+  button{
   
   
   font-size: 25px;
@@ -194,13 +200,10 @@ button{
 }
 .Home{
   padding: 9px;
- }
+  font-size: 15px;
+}
  
- .Home p{
-   color: white;
-   font-size: 15px;
-  
- }
+ 
  .showAuth{
   font-size: 40px;
   font-family: 'Josefin Sans', sans-serif;
@@ -266,6 +269,11 @@ input{
     margin: 5px;
     padding: 5px;
   }
+  a .Home{
+  display: flex;
+  margin: 2px auto;
+
+}
   .search-results{
     height: 1800px;
   }
