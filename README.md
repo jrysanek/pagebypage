@@ -67,8 +67,8 @@ My goals for this project are to successfully call and render the api informatio
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |   React Router   |  Using router to direct to different pages.   |
-|     Link         |Will be using to link the pages to eachother.   |
-|                  |                                            |
+|     Link         |Will be using to link the pages to each other.   |
+|    Storybook              |     Designed reusable components                          |
 
 <br>
 
