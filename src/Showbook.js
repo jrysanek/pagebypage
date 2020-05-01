@@ -13,7 +13,7 @@ function Showbook(props) {
            <h2>{books[index].best_book.title._text}</h2>
            <h3>{books[index].best_book.author.name._text}</h3>
            <img src={books[index].best_book.image_url._text} />
-           <button>wishlist</button>
+           <button className="wishlist">Wishlist</button>
         </div>
     )} else {
         return <div></div>
