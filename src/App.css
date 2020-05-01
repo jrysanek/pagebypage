@@ -169,16 +169,64 @@ footer img{
     background-color: rgb(175, 5, 8);
 
   }
-footer{
-  position: absolute;
-  height:50px;
-  width: 100%;
+  footer{
+   position: absolute;
+    width: 100%;
 }
-.imgRes{
-  padding-left: 35px;
-  height: 122px;
+  .imgRes{
+    padding-left: 35px;
+    height: 122px;
   
 }
+  input{
+   padding: 10px 25px;
+   margin: 15px 10px;
+   text-align: center;
+}
+button{
+  
+  
+  font-size: 25px;
+  border-radius: 6px;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 15px;
+}
+.Home{
+  padding: 9px;
+ }
+ 
+ .Home p{
+   color: white;
+   font-size: 15px;
+  
+ }
+ .showAuth{
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.showImg{
+  height:550px;
+  margin: 0 35px;
+}
+.showWishlist{
+  padding: 15px;
+  margin: 10px 85px;
+}
+.showTitle{
+  font-size: 50px;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  margin-top: -150px;
+
+}
+input{
+  font-size: 25px;
+}
+
   
 
 }
@@ -236,7 +284,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
     font-size: 10px;
-    border: 2px solid black;
   }
   .imgRes{
     display:flex;
@@ -258,8 +305,39 @@ footer{
     
   }
 
-
-
+  .showTitle{
+    font-size: 27px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-top: -880px;
+  
+  }
+  
+  .showAuth{
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-top: -25px;
+  }
+  
+  .showImg{
+    height:350px;
+    margin: 0 35px;
+  }
+  .showWishlist{
+    padding: 15px;
+    margin: 10px 105px;
+  }
+  input{
+    font-size: 12px;
+  }
+  button{
+    font-size: 25px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    border: none;
+    margin-top: 15px;
+  }
 
 
 }
