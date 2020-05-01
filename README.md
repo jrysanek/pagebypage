@@ -109,10 +109,10 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    |  |   |     | _Will have page title and nav bar._               |
-|  Navigation  |  |    |   | _Will provide links to separate components/pages_       |
-|   Book Images/links   |      |     |      | _This will be the results provided by the api._      |
-|Page Links  |  |     |     | _Link function for the results when they have multiple pages_                 |
+|    Header    | function |  Y |    Y | _Will have page title._               |
+|  Home  |  Button |  Y  |  Y | _Will provide links to separate components/pages_       |
+|   Book Images/links   |  function    |Y   | Y     | _This will be the results provided by the api._      |
+|Page Links  | Route/Link |   Y  | Y    | _Link function for the results when they have multiple pages_                 |
 |    Footer    |  |     |     | _Copyright info._ |
 
 <br>
