@@ -48,7 +48,7 @@ header{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-height: 250px;
+  height: 250px;
 }
 
 header h1{
@@ -152,4 +152,114 @@ footer h1{
 
 footer img{
   padding: 0 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    border: 2px solid black;
+    height: 1230px;
+    width: 770px;
+    align-content: center;
+    background-color: rgb(175, 5, 8);
+
+  }
+footer{
+  position: absolute;
+  height:50px;
+  width: 100%;
+}
+.imgRes{
+  padding-left: 35px;
+  height: 122px;
+  
+}
+  
+
+}
+@media only screen and (max-width: 375px) {
+
+  header{
+    width: 100vw;
+    height:275px;
+ 
+  }
+  header h1{
+    padding: 55px 0;
+  }
+  main{
+    padding-top: 0;
+    height: 2000px;
+  }
+  .books{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    border: 2px solid black;
+    height: 1800px;
+    width: 310px;
+    align-content: center;
+    background-color: rgb(175, 5, 8);
+
+  }
+  footer{
+    position: absolute;
+    height: 50px;
+    width: 100vw;
+    
+  }
+  footer h4{
+    margin: 5px;
+    padding: 5px;
+  }
+  .search-results{
+    height: 1800px;
+  }
+  .results{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    width: 120px;
+    height: 150px;
+    padding: 5px;
+  }
+  
+ 
+  
+  .results h2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    border: 2px solid black;
+  }
+  .imgRes{
+    display:flex;
+    align-content: space-around;
+    margin-top: 15px;
+    padding: 0;
+    height: 85px;
+    
+  }
+  .wishlist{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 75px;
+    margin-top:-18px;
+    margin-bottom: 0px;
+    font-size: 9px;
+    
+    
+    
+  }
+
+
+
+
+
 }
